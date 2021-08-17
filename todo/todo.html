@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="../shared/style.css">
+    <title>To-do List</title>
+  </head>
+  <body>
+    <main class="animedown">
+      <a href="https://play.google.com/" target="_blanck" class="app-store">Baixe nosso app!</a>
+      <div class="container">
+        <div class="header-title">
+          <h1>Crie aqui sua lista de tarefas</h1>
+        </div>
+        <form name="registro" class="form-header">
+          <input type="text" id="input" placeholder="Digite aqui" maxlength="30">
+          <span class="error-message">Este campo é obrigatório.</span>
+          <span class="error-message-limit">Este campo tem um limite de 30 caracteres.</span>
+          <button class="button-create-task">Criar tarefa</button>
+        </form>
+        <div class="collapse-todo">
+          <div class="collapse-todo-header">
+            <div class="collapse-todo-title">
+              <p>Lista</p>
+            </div>
+            <div class="collapse-todo-icon">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="collapse-todo-content">
+            <form class="list-todo-container">
+              <ul class="list-todo-content">
+                <div class="empty-list">Não há tarefas no momento!</div>
+              </ul>
+            </form>
+          </div>
+        </div>
+        <div class="tasks-already-done">
+          <a href="../done/done.html">Tarefas já realizadas</a>
+          <i class="fas fa-check"></i>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="../shared/auxiliary-functions.js"></script>
+  <script src="../shared/shared.js"></script>
+  <script src="./todo.js"></script>
+</html>
